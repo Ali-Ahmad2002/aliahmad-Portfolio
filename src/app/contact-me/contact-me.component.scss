@@ -1,0 +1,78 @@
+.main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+}
+
+.mainContainer {
+    width: fit-content;
+
+    h1 {
+        color: #2bedcb;
+        font-size: 65px;
+        text-align: start;
+        margin: 0;
+        margin-top: 10%;
+        margin-bottom: 2%;
+    }
+
+    span {
+        color: #7d7d7d;
+    }
+
+    h3 {
+        color: white;
+        margin: 0px;
+        margin-bottom: 2%;
+        margin-top: 5%;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        margin-top: 6%;
+    }
+
+    input {
+        width: 100%;
+        background-color: #1a1a1a;
+        padding: 2%;
+        color: white;
+    }
+
+    textarea {
+        width: 100%;
+        background-color: #1a1a1a;
+        padding: 2%;
+        color: white;
+    }
+
+    button {
+        width: 30%;
+        margin-top: 2%;
+        border: 1px solid #198e79;
+        background-color: unset;
+        color: #198e79;
+        padding: 3%;
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(255 255 255 / 10%);
+        }
+    }
+}
+
+.headlineContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.headContainer {
+    text-align: center;
+}
+
+.childContainer {
+    width: 100%;
+}

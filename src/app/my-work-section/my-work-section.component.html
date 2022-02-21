@@ -1,0 +1,30 @@
+<div class="mainContainer">
+    <h1>My projects</h1>
+
+    <div class="btnContainer">
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+            <mat-button-toggle (click)="showProject('all')"  value="bold">All</mat-button-toggle>
+            <mat-button-toggle (click)="showProject('angular')" value="italic">Angular</mat-button-toggle>
+            <mat-button-toggle (click)="showProject('javascript')" value="underline">JavaScript</mat-button-toggle>
+        </mat-button-toggle-group>
+
+
+        <!-- <button (click)="showProject('all')">All</button>
+        <button (click)="showProject('angular')">Angular</button>
+        <button (click)="showProject('javascript')">JavaScript</button> -->
+    </div>
+
+
+
+
+    <div class="flexContainer">
+        <div class="projectMainContainer" *ngFor="let project of filteredProjects" let>
+            <img [class.blur]="false" class="projectImg" src="{{project.img}}">
+            <div class="projectOverlay">
+                <h2>{{ project.name }}</h2>
+                <h2>{{ project.categorie }}</h2>
+                <a href="{{ project.url }}">View</a>
+            </div>
+        </div>
+    </div>
+</div>

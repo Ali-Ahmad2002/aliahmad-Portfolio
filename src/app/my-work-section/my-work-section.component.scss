@@ -1,0 +1,164 @@
+.mainContainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+.btnColor {
+    background-color: #fa2759 !important;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+
+    // button {
+    //     padding: 25px;
+    //     margin-top: 50px;
+    //     padding-left: 70px;
+    //     padding-right: 70px;
+    //     font-size: 20px;
+    //     border: 1px solid #fa2759;
+    //     background-color: black;
+    //     color: white;
+    //     cursor: pointer;
+    //     margin-left: 10px;
+    //     margin-right: 10px;
+    //     width: 220px;
+    //     text-align: center;
+    //     transition: all 125ms ease-in-out;
+}
+
+.mat-button-toggle-checked {
+    padding: 15px;
+    margin: 32px;
+    background-color: #fa2759 !important;
+    box-shadow: 0 0 30px #000 !important;
+    height: 54px;
+    color: white;
+}
+
+.mat-button-toggle {
+    padding: 16px 16px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 32px;
+    margin: 30px;
+    position: unset;
+    background-color: black;
+    border: 1px solid #fa2759;
+    color: white;
+    width: 200px;
+    transition: all 150ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: #FA2759;
+    }
+}
+
+.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: 1px solid #fa2759;
+}
+
+.mat-button-toggle-input {
+    background-color: none !important;
+    padding-left: 50px !important;
+}
+
+.mat-button-toggle-standalone,
+.mat-button-toggle-group {
+    position: unset;
+}
+
+.green {
+    background-color: black !important;
+}
+
+.red {
+    background-color: #fa2759 !important;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 15%;
+    padding-left: 15%;
+    height: 850px;
+}
+
+.projectMainContainer {
+    width: 350px;
+    height: 350px;
+    margin: 3%;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5%;
+    margin-left: 5%;
+
+    &:hover .projectOverlay {
+        opacity: 1;
+    }
+
+    &:hover img {
+        filter: blur(3px);
+    }
+
+    img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        transition: all 300ms ease-in-out;
+        border-radius: 6%;
+    }
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.projectOverlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0 0 0 / 10%);
+    transition: opacity 300ms ease-in-out;
+
+    h2 {
+        margin-top: 30px;
+        font-size: 30px;
+        color: black;
+        background-color: #ffffffbf;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    transition: transform 75ms ease-in-out;
+    border: 1px solid #ffffff78;
+    padding: 10px;
+    border-radius: 25px;
+    transition: transform 75ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.25);
+    }
+}

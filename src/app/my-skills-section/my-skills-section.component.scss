@@ -1,0 +1,58 @@
+.mainContainer {
+    background-color: #131111;
+
+    h1 {
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 50px;
+    }
+
+    h2 {
+        width: fit-content;
+        color: black;
+        padding: 50px;
+        background-color: white;
+        width: 100px;
+        border-radius: 10px;
+        text-align: center;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mainskillContainer {
+    width: fit-content;
+    margin: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: all 75ms ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.mainIconContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+
+    div {
+        border: 1px solid #00000029;
+        padding: 15px;
+        background-color: white;
+        border-radius: 100%;
+
+        img {
+            height: 45px;
+        }
+    }
+}

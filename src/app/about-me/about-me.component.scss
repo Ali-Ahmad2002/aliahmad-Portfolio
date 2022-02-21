@@ -1,0 +1,32 @@
+.mainContainer {
+    background-color: #131111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+h1 {
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+.imgContainer {
+    padding-left: 250px;
+}
+
+.textContainer {
+    width: 40%;
+    padding-right: 250px;
+}
