@@ -8,11 +8,17 @@ header {
     justify-content: space-between;
     padding-left: 150px;
     padding-right: 150px;
-    padding-top: 15px;
-    height: 10vh;
+    padding-top: 10px;
+    height: 8vh;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff30;
+    box-shadow: 0 0px 2px 0 white;
+    position: fixed;
+    z-index: 100;
+    background-color: black;
 
     img {
-        background-color: white;
+        height: 80px;
         border-radius: 5px;
     }
 

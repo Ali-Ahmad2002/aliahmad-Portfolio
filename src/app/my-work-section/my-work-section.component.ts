@@ -21,13 +21,13 @@ export class MyWorkSectionComponent implements OnInit {
     {
       name: 'Pokedex',
       img: 'assets/img/pokedex.jpg',
-      categorie: 'javascript',
-      url: 'http://ali-ahmad.developerakademie.net/NEU%20JS%20Pokex/index.html'
+      categorie: 'angular',
+      url: 'http://ali-ahmad.developerakademie.net/AngularPokedex/index.html'
     },
 
     {
       name: 'Join',
-      img: 'assets/img/join.png',
+      img: 'assets/img/canban.PNG',
       categorie: 'javascript',
       url: 'http://gruppe-145.developerakademie.net/GithubProjekte/join-/join/index.html'
     },

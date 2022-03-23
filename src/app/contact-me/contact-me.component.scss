@@ -1,78 +1,78 @@
-.main {
+.contact {
     display: flex;
     justify-content: center;
-    margin-bottom: 7%;
+    h1 {
+        color: #2efcd8;
+        text-align: start;
+        font-size: 50px;
+        margin-bottom: 8px;
+    }
+    p {
+        color: white;
+    }
 }
 
-.mainContainer {
-    width: fit-content;
+.contact-text {
+    padding-bottom: 3rem;
+}
 
-    h1 {
-        color: #2bedcb;
-        font-size: 65px;
-        text-align: start;
-        margin: 0;
-        margin-top: 10%;
-        margin-bottom: 2%;
-    }
-
-    span {
-        color: #7d7d7d;
-    }
-
-    h3 {
-        color: white;
-        margin: 0px;
-        margin-bottom: 2%;
-        margin-top: 5%;
-    }
-
+.section-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
     form {
         display: flex;
-        justify-content: center;
-        margin-top: 6%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
     }
+}
 
+.inputContainer {
+    width: 75%;
     input {
         width: 100%;
-        background-color: #1a1a1a;
-        padding: 2%;
-        color: white;
+        height: 1rem;
+        padding: 8px;
+        margin-bottom: 2rem;
     }
 
     textarea {
         width: 100%;
-        background-color: #1a1a1a;
-        padding: 2%;
-        color: white;
-    }
-
-    button {
-        width: 30%;
-        margin-top: 2%;
-        border: 1px solid #198e79;
-        background-color: unset;
-        color: #198e79;
-        padding: 3%;
-        font-size: 22px;
-        font-weight: 600;
-        cursor: pointer;
-
-        &:hover {
-            background-color: rgb(255 255 255 / 10%);
-        }
+        padding: 8px;
     }
 }
 
-.headlineContainer {
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 105%;
+    button {
+        width: 50%;
+        padding: 8px;
+        background-color: transparent;
+        color: #2efcd8;
+        border: 1px solid #2efcd8;
+        cursor: pointer;
+    }
+}
+
+.mailSuccess {
+    width: 100%;
+    height: 16rem;
+    position: absolute;
+    background-color: #2efcd8;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    animation: overlay 125ms ease-in-out;
 }
 
-.headContainer {
-    text-align: center;
-}
-
-.childContainer {
-    width: 100%;
+@keyframes overlay {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }

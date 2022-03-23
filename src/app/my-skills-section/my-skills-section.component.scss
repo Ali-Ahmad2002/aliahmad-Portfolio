@@ -4,8 +4,9 @@
     h1 {
         color: white;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 6.5rem;
         font-size: 50px;
+        padding-bottom: 1.5rem;
     }
 
     h2 {
@@ -23,7 +24,23 @@
     }
 }
 
-.flexContainer {
+.firstContainer {
+    display: flex;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 3rem;
+}
+
+.secondCon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thirdCon {
+    width: 33%;
     display: flex;
     justify-content: center;
 }

@@ -1,4 +1,4 @@
-<div class="mainContainer">
+<div  class="mainContainer">
     <h1>My projects</h1>
 
     <div class="btnContainer">
@@ -18,12 +18,12 @@
 
 
     <div class="flexContainer">
-        <div class="projectMainContainer" *ngFor="let project of filteredProjects" let>
+        <div class="projectMainContainer" id="projects" *ngFor="let project of filteredProjects" data-aos="flip-right">
             <img [class.blur]="false" class="projectImg" src="{{project.img}}">
             <div class="projectOverlay">
                 <h2>{{ project.name }}</h2>
                 <h2>{{ project.categorie }}</h2>
-                <a href="{{ project.url }}">View</a>
+                <a href="{{ project.url }}" target="blank">View</a>
             </div>
         </div>
     </div>

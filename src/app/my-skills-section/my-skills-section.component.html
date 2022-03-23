@@ -2,126 +2,20 @@
 
     <h1>My skills</h1>
 
-    <div class="flexContainer">
-        <div class="mainskillContainer">
-            <div>
-                <div class="mainIconContainer">
-                    <div>
-                        <img src="assets/img/java script.png" alt="">
+    <div class="firstContainer">
+        <div class="secondCon">
+            <div class="thirdCon" *ngFor="let skills of allSkills" data-aos="fade-right">
+                <div class="mainskillContainer">
+                    <div class="mainIconContainer">
+                        <div>
+                            <img src="{{ skills.img }}" alt="">
+                        </div>
                     </div>
-
+                    <h2> {{ skills.skill }} </h2>
                 </div>
-                <h2>JavaScript</h2>
-            </div>
-        </div>
-
-        <div class="mainskillContainer">
-            <div>
-                <div class="mainIconContainer">
-                    <div>
-                        <img src="assets/img/angular.svg" alt="">
-                    </div>
-
-                </div>
-                <h2>Angular</h2>
-            </div>
-        </div>
-
-        <div class="mainskillContainer">
-            <div>
-                <div class="mainIconContainer">
-                    <div>
-                        <img src="assets/img/Group 205.png" alt="">
-                    </div>
-
-                </div>
-                <h2>HTML/CSS</h2>
             </div>
         </div>
     </div>
-
-
-
-    <div class="flexContainer">
-        <div class="mainskillContainer">
-            <div>
-                <div class="mainIconContainer">
-                    <div>
-                        <img src="assets/img/Group 226.png" alt="">
-                    </div>
-
-                </div>
-                <h2>Scrum</h2>
-            </div>
-        </div>
-
-        <div class="mainskillContainer">
-            <div>
-                <div class="mainIconContainer">
-                    <div>
-                        <img src="assets/img/Git-Icon-1788C 2.png" alt="">
-                    </div>
-
-                </div>
-                <h2>Git</h2>
-            </div>
-        </div>
-
-        <div class="mainskillContainer">
-            <div>
-                <div class="mainIconContainer">
-                    <div>
-                        <img src="assets/img/Group 205.png" alt="">
-                    </div>
-
-                </div>
-                <h2>Design Thinking</h2>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="flexContainer">
-        <div class="mainskillContainer">
-            <div>
-                <div class="mainIconContainer">
-                    <div>
-                        <img src="assets/img/icons8-rest-api-80 2.png" alt="">
-                    </div>
-
-                </div>
-                <h2>Rest API</h2>
-            </div>
-        </div>
-
-        <div class="mainskillContainer">
-            <div>
-                <div class="mainIconContainer">
-                    <div>
-                        <img src="assets/img/icons8-test-lab-96 2.png" alt="">
-                    </div>
-
-                </div>
-                <h2>Test Automation</h2>
-            </div>
-        </div>
-
-        <div class="mainskillContainer">
-            <div>
-                <div class="mainIconContainer">
-                    <div>
-                        <img src="assets/img/icons8-database-52 2.png" alt="">
-                    </div>
-
-                </div>
-                <h2>Databases</h2>
-            </div>
-        </div>
-    </div>
-
-
-
 
 
 </div>
