@@ -1,29 +1,33 @@
-<div  class="mainContainer">
+<div class="mainContainer">
     <h1>My projects</h1>
 
     <div class="btnContainer">
-        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <!-- <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
             <mat-button-toggle (click)="showProject('all')"  value="bold">All</mat-button-toggle>
             <mat-button-toggle (click)="showProject('angular')" value="italic">Angular</mat-button-toggle>
             <mat-button-toggle (click)="showProject('javascript')" value="underline">JavaScript</mat-button-toggle>
-        </mat-button-toggle-group>
+        </mat-button-toggle-group> -->
 
 
-        <!-- <button (click)="showProject('all')">All</button>
-        <button (click)="showProject('angular')">Angular</button>
-        <button (click)="showProject('javascript')">JavaScript</button> -->
+        <button class="bgRed" (click)="showProject('all')" [class.bgRed]="toggle1">All</button>
+        <button (click)="showProject('angular')" [class.bgRed]="!toggle1 && toggle2">Angular</button>
+        <button (click)="showProject('javascript')" [class.bgRed]="!toggle1 && !toggle2 && toggle3">JavaScript</button>
     </div>
-
 
 
 
     <div class="flexContainer">
         <div class="projectMainContainer" id="projects" *ngFor="let project of filteredProjects" data-aos="flip-right">
-            <img [class.blur]="false" class="projectImg" src="{{project.img}}">
+            <img class="projectImg" src="{{project.img}}">
             <div class="projectOverlay">
-                <h2>{{ project.name }}</h2>
-                <h2>{{ project.categorie }}</h2>
-                <a href="{{ project.url }}" target="blank">View</a>
+                <div class="overlay1">
+                    <h2>{{ project.name }}</h2>
+                    <span>{{ project.description }}</span>
+                </div>
+               
+                <div class="overlay2">
+                    <a href="{{ project.url }}" target="blank"> <button>View</button> </a>
+                </div>
             </div>
         </div>
     </div>

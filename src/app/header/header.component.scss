@@ -1,4 +1,4 @@
-header {
+.main {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,6 +20,7 @@ header {
     img {
         height: 80px;
         border-radius: 5px;
+        cursor: pointer;
     }
 
     a {
@@ -32,6 +33,25 @@ header {
 
         &:hover {
             color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .main {
+        padding-left: unset;
+        padding-right: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+        height: unset;
+        padding: 1em;
+        justify-content: center;
+        a {
+            font-size: 1em;
+            padding: 0 1em;
+        }
+        img {
+            height: 3em;
         }
     }
 }

@@ -1,0 +1,51 @@
+.mainContainer {
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    a {
+        font-size: 20px;
+        color: #bac1c9;
+    }
+
+    img {
+        padding-left: 7%;
+        cursor: pointer;
+    }
+}
+
+.text {
+    padding-left: 150px;
+}
+
+.images {
+    padding-right: 150px;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+    .text {
+        padding-left: unset;
+    }
+    .images {
+        width: unset;
+        padding-right: unset;
+    }
+    .mainContainer {
+        flex-direction: column;
+        padding-top: 1em;
+        height: unset;
+        img {
+            padding-left: unset;
+            height: 3em;
+            margin: 0 0.5em;
+        }
+    }
+}

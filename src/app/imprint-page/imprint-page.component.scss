@@ -1,0 +1,15 @@
+.mainContainer {
+    color: white;
+    padding-left: 150px;
+    height: 80vh;
+    h1 {
+        padding-top: 10rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mainContainer {
+        padding-left: 2em;
+        padding-top: 2em;
+    }
+}

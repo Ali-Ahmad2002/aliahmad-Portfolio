@@ -10,8 +10,8 @@
 img {
     object-fit: cover;
     height: 200px;
-    border-radius: 5%;
-    width: 200px;
+    border-radius: 5px;
+    width: 300px;
 }
 
 h1 {
@@ -32,4 +32,36 @@ span {
 .textContainer {
     width: 40%;
     padding-right: 250px;
+}
+
+@media (max-width: 1350px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 3em 1em;
+    }
+    .imgContainer {
+        padding-left: unset;
+        display: flex;
+        justify-content: center;
+        img {
+            height: 12em;
+            width: 16em;
+            margin-bottom: 2em;
+        }
+    }
+    .textContainer {
+        width: unset;
+        padding-right: unset;
+        text-align: center;
+        padding-bottom: 3em;
+        h1 {
+            font-size: 2.5em;
+            padding-bottom: unset;
+            margin-bottom: 1.2em;
+        }
+        span {
+            font-size: 1.2em;
+        }
+    }
 }

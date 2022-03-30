@@ -14,8 +14,11 @@ import { MySkillsSectionComponent } from './my-skills-section/my-skills-section.
 import { MyWorkSectionComponent } from './my-work-section/my-work-section.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
-import { ImprintComponent } from './imprint/imprint.component';
+import { ImprintComponent } from './footer/imprint.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImprintPageComponent } from './imprint-page/imprint-page.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { HeadSectionComponent } from './head-section/head-section.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MyWorkSectionComponent,
     AboutMeComponent,
     ContactMeComponent,
-    ImprintComponent
+    ImprintComponent,
+    ImprintPageComponent,
+    DataProtectionComponent,
+    HeadSectionComponent
   ],
   imports: [
     BrowserModule,

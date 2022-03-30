@@ -15,22 +15,27 @@
 .btnContainer {
     display: flex;
     justify-content: center;
+    padding-bottom: 32px;
 
-    // button {
-    //     padding: 25px;
-    //     margin-top: 50px;
-    //     padding-left: 70px;
-    //     padding-right: 70px;
-    //     font-size: 20px;
-    //     border: 1px solid #fa2759;
-    //     background-color: black;
-    //     color: white;
-    //     cursor: pointer;
-    //     margin-left: 10px;
-    //     margin-right: 10px;
-    //     width: 220px;
-    //     text-align: center;
-    //     transition: all 125ms ease-in-out;
+    button {
+        padding: 25px;
+        margin-top: 50px;
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 20px;
+        border: 1px solid #fa2759;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 220px;
+        text-align: center;
+        transition: all 125ms ease-in-out;
+    }
+}
+.bgRed {
+    background-color: #fa2759 !important;
 }
 
 .mat-button-toggle-checked {
@@ -58,11 +63,11 @@
     justify-content: center;
     align-items: center;
     &:hover {
-        background-color: #FA2759;
+        background-color: #fa2759;
     }
 }
 
-.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+.mat-button-toggle-group-appearance-standard .mat-button-toggle + .mat-button-toggle {
     border-left: 1px solid #fa2759;
 }
 
@@ -90,37 +95,29 @@
     flex-wrap: wrap;
     padding-right: 15%;
     padding-left: 15%;
-    height: 850px;
 }
 
 .projectMainContainer {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     margin: 3%;
     cursor: pointer;
     position: relative;
-    margin-right: 5%;
-    margin-left: 5%;
+    // margin-right: 5%;
+    // margin-left: 5%;
 
     &:hover .projectOverlay {
         opacity: 1;
-    }
-
-    &:hover img {
-        filter: blur(3px);
+        background-color: #f5f5f5d3;
     }
 
     img {
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         transition: all 300ms ease-in-out;
-        border-radius: 6%;
+        border-radius: 10px;
     }
-}
-
-.blur {
-    filter: blur(3px);
 }
 
 .projectOverlay {
@@ -128,6 +125,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    border-radius: 10px;
     top: 0;
     right: 0;
     left: 0;
@@ -137,28 +135,91 @@
     align-items: center;
     background-color: rgb(0 0 0 / 10%);
     transition: opacity 300ms ease-in-out;
-
+    justify-content: space-between;
     h2 {
         margin-top: 30px;
         font-size: 30px;
         color: black;
-        background-color: #ffffffbf;
+        // background-color: #ffffffbf;
+        color: #fa2759;
         padding: 5px;
         border-radius: 10px;
     }
+    span {
+        text-align: center;
+        padding: 0 16px;
+        font-size: 17px;
+    }
+}
+
+.overlay1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay2 {
+    padding-bottom: 24px;
 }
 
 a {
     font-size: 30px;
     text-decoration: none;
     color: black;
-    transition: transform 75ms ease-in-out;
-    border: 1px solid #ffffff78;
+    transition: transform 125ms ease-in-out;
     padding: 10px;
     border-radius: 25px;
     transition: transform 75ms ease-in-out;
 
-    &:hover {
-        transform: scale(1.25);
+    button {
+        cursor: pointer;
+        font-size: 24px;
+        border-radius: 5px;
+        transition: all 125ms ease-in-out;
+        &:hover {
+            color: white;
+            background-color: #fa2759;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .mainContainer {
+        padding-bottom: unset;
+    }
+    .flexContainer {
+        height: unset;
+        padding-left: unset;
+        padding-right: unset;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        border-bottom: 1px solid #ffffff7d;
+    }
+    .btnContainer {
+        button {
+            padding-left: unset;
+            padding-right: unset;
+            width: unset;
+            margin-left: unset;
+            margin-right: unset;
+            width: 6em;
+            font-size: 1.2em;
+            padding: 1.2em 0em;
+        }
+    }
+    .projectMainContainer {
+        width: unset;
+        height: unset;
+        img {
+            width: 15em;
+            height: 15em;
+        }
+    }
+    .projectOverlay {
+        h2 {
+            margin-top: 1em;
+            padding: 0.2em;
+            font-size: unset;
+        }
     }
 }

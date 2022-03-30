@@ -73,3 +73,27 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .firstContainer {
+        display: flex;
+        justify-content: center;
+        padding-left: unset;
+        padding-right: unset;
+    }
+    .secondCon {
+        width: unset;
+        display: unset;
+    }
+    .thirdCon {
+        width: unset;
+        display: unset;
+    }
+    .mainContainer {
+        h1 {
+            font-size: 3em;
+            padding-top: 1em;
+            padding-bottom: unset;
+        }
+    }
+}

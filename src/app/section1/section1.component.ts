@@ -1,5 +1,6 @@
 import { animate, style, transition } from '@angular/animations';
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-section1',
@@ -11,20 +12,19 @@ export class Section1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.options = {
+      strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+      typeSpeed: 40
+    };
 
-    this.animateHeadline();
   }
 
-  animateHeadline() {
-    setTimeout(() => {
-      transition(':enter', [
-        style({ opacity: 0 }), animate('300ms', style({ opacity: 0 }))]
-      ),
-        transition(':leave',
-          [style({ opacity: 1 }), animate('300ms', style({ opacity: 1 }))]
-        )
-    }, 2000);
-  }
+  options = {
+    strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+    typeSpeed: 40
+  };
+
+
 
 
 

@@ -28,16 +28,16 @@
 }
 
 .inputContainer {
-    width: 75%;
+    width: 100%;
     input {
-        width: 100%;
+        width: 96%;
         height: 1rem;
         padding: 8px;
         margin-bottom: 2rem;
     }
 
     textarea {
-        width: 100%;
+        width: 96%;
         padding: 8px;
     }
 }
@@ -45,7 +45,7 @@
 .btn-container {
     display: flex;
     justify-content: flex-end;
-    width: 105%;
+    width: 100%;
     button {
         width: 50%;
         padding: 8px;
@@ -74,5 +74,26 @@
     }
     to {
         transform: scale(1);
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-content {
+        form {
+            padding: 0 1em;
+        }
+    }
+    .contact-text {
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            text-align: center;
+        }
+    }
+    .btn-container {
+        width: unset;
+        justify-content: center;
     }
 }

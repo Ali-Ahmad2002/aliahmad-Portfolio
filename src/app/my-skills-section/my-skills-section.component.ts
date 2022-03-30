@@ -14,7 +14,7 @@ export class MySkillsSectionComponent implements OnInit {
     },
 
     {
-      img: 'assets/img/angular.svg',
+      img: 'assets/img/Angular-logo.png',
       skill: 'Angular'
     },
 

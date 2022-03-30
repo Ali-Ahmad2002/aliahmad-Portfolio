@@ -1,0 +1,15 @@
+.main {
+    color: white;
+    padding: 0 150px;
+    h1 {
+        padding-top: 10rem;
+    }
+}
+@media (max-width:1200px) {
+    .main {
+        padding: 0 2em;
+    }
+    .break {
+        word-break: break-word;
+    }
+}
