@@ -13,11 +13,11 @@ export class HeadSectionComponent implements OnInit {
 
   ngOnInit(): void {
     new Typed('#typed', {
-      typeSpeed: 80,
+      typeSpeed: 60,
       startDelay: 100,
       stringsElement: '#typed-strings',
       backDelay: 1500,
-      backSpeed: 40,
+      backSpeed: 30,
       loop: true,
       showCursor: true,
       cursorChar: '|'

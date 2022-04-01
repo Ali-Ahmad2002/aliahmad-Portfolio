@@ -1,14 +1,12 @@
 .mainContainer {
     background-color: #131111;
-
     h1 {
         color: white;
         text-align: center;
         padding-top: 6.5rem;
-        font-size: 50px;
+        font-size: 46px;
         padding-bottom: 1.5rem;
     }
-
     h2 {
         width: fit-content;
         color: black;
@@ -43,6 +41,7 @@
     width: 33%;
     display: flex;
     justify-content: center;
+    transition: all 125ms ease-in-out;
 }
 
 .mainskillContainer {
@@ -52,22 +51,18 @@
     margin-right: 50px;
     cursor: pointer;
     transition: all 75ms ease-in-out;
-    &:hover {
-        transform: scale(1.1);
-    }
 }
 
 .mainIconContainer {
     display: flex;
     justify-content: center;
     margin-bottom: -30px;
-
     div {
         border: 1px solid #00000029;
         padding: 15px;
         background-color: white;
         border-radius: 100%;
-
+        box-shadow: 0 0px 5px 0;
         img {
             height: 45px;
         }

@@ -24,7 +24,7 @@ export class MyWorkSectionComponent implements OnInit {
   projects = [
     {
       name: 'Pokedex',
-      img: 'assets/img/pokedex.jpg',
+      img: 'assets/img/pokomon.jpg',
       description: 'A angular based website to search an show detailed stats of pokemons',
       categorie: 'angular',
       url: 'http://ali-ahmad.developerakademie.net/AngularPokedex/index.html'
@@ -32,7 +32,7 @@ export class MyWorkSectionComponent implements OnInit {
 
     {
       name: 'Join',
-      img: 'assets/img/canban.PNG',
+      img: 'assets/img/join (1).png',
       description: 'Tasks management system based on Eisenhower´s urgent-important-principle.',
       categorie: 'javascript',
       url: 'http://gruppe-145.developerakademie.net/GithubProjekte/join-/join/index.html'
@@ -40,7 +40,7 @@ export class MyWorkSectionComponent implements OnInit {
 
     {
       name: 'El Pollo Loco',
-      img: 'assets/img/Opción 1.png',
+      img: 'assets/img/el_pollo_loco.png',
       description: 'JavaScript-based jump-and-run-game.',
       categorie: 'javascript',
       url: ''
