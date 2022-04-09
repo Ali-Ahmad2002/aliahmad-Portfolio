@@ -16,13 +16,11 @@
     position: fixed;
     z-index: 100;
     background-color: black;
-
     img {
         height: 80px;
         border-radius: 5px;
         cursor: pointer;
     }
-
     a {
         font-size: 33px;
         text-decoration: none;
@@ -30,7 +28,6 @@
         padding-right: 20px;
         color: white;
         scroll-behavior: smooth;
-
         &:hover {
             color: rgba(255, 255, 255, 0.8);
         }
@@ -52,6 +49,14 @@
         }
         img {
             height: 3em;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .main {
+        a {
+            font-size: 0.95em;
         }
     }
 }
