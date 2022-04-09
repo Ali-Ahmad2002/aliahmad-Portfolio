@@ -52,6 +52,14 @@ export class MyWorkSectionComponent implements OnInit {
       description: 'Angular-based web-app of the popular drinking game.',
       categorie: 'angular',
       url: 'http://ali-ahmad.developerakademie.net/ringOfFire/index.html'
+    },
+
+    {
+      name: 'Weather app',
+      img: 'assets/img/weatherApp.png',
+      description: 'Angular-based web-app, who shows you the weather of your searched city.',
+      categorie: 'angular',
+      url: 'http://ali-ahmad.developerakademie.net/weather-website/index.html'
     }
   ]
 
