@@ -43,7 +43,7 @@ export class MyWorkSectionComponent implements OnInit {
       img: 'assets/img/el_pollo_loco.png',
       description: 'JavaScript-based jump-and-run-game.',
       categorie: 'javascript',
-      url: ''
+      url: 'http://ali-ahmad.developerakademie.net/El_Pollo_Loco/index.html'
     },
 
     {
