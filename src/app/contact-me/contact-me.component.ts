@@ -14,7 +14,7 @@ export class ContactMeComponent implements OnInit {
     message: '',
   };
   post = {
-    endPoint: 'http://ali-ahmad.developerakademie.net/send_mail.php', // Ex. www.my-domain/sendMail.php
+    endPoint: 'https://ali-ahmad-portfolio.de/send_mail.php', // Ex. www.my-domain/sendMail.php
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
