@@ -55,7 +55,7 @@ export class MyWorkSectionComponent implements OnInit {
     },
 
     {
-      name: 'Weather app',
+      name: 'Weather website',
       img: 'assets/img/weatherApp.png',
       description: 'Angular-based web-app, who shows you the weather of your searched city.',
       categorie: 'angular',
